@@ -1,0 +1,23 @@
+step,description,details
+column_standardization,Standardized column names to snake_case.,"{""Show_Id"": ""show_id"", ""Category"": ""category"", ""Title"": ""title"", ""Director"": ""director"", ""Cast"": ""cast"", ""Country"": ""country"", ""Release_Date"": ""release_date"", ""Rating"": ""rating"", ""Duration"": ""duration"", ""Type"": ""type"", ""Description"": ""description""}"
+parse_date_added,Parsed date_added into datetime.,errors='coerce'
+trim_title,Trimmed whitespace and normalized placeholders in title.,
+trim_director,Trimmed whitespace and normalized placeholders in director.,
+trim_cast,Trimmed whitespace and normalized placeholders in cast.,
+trim_country,Trimmed whitespace and normalized placeholders in country.,
+trim_listed_in,Trimmed whitespace and normalized placeholders in listed_in.,
+trim_description,Trimmed whitespace and normalized placeholders in description.,
+normalize_rating,Upper-cased rating strings and harmonized placeholders.,
+release_year_assumption,Derived release_year from date_added (approximation).,Use cautiously for historical analyses.
+deduplicate,"Removed 3 duplicate rows using subset ['title', 'type', 'release_year'].",
+fill_director,Filled 2388 missing values in director with 'Unknown'.,
+fill_cast,Filled 718 missing values in cast with 'Unknown'.,
+fill_country,Filled 507 missing values in country with 'Unknown'.,
+parse_duration,"Extracted numeric duration, unit, minutes, and season count.",
+reset_index,Reset index after cleaning to ensure sequential labels.,
+date_parts_date_added,Derived year and month from date_added.,
+feature_age_in_years,Computed title age based on release_year.,
+feature_multi_country,Added multi-country indicators and counts.,
+feature_actor_count,Counted actors per title.,
+feature_top_genres,Created binary flags for top 20 genres.,"International Movies, Dramas, Comedies, International TV Shows, Documentaries, Action & Adventure, TV Dramas, Independent Movies, Children & Family Movies, Romantic Movies, TV Comedies, Thrillers, Crime TV Shows, Kids' TV, Docuseries, Romantic TV Shows, Stand-Up Comedy, Music & Musicals, Horror Movies, British TV Shows"
+missingness_profile,Computed post-cleaning missingness ratios.,"[{""column"":""season_count"",""missing_ratio"":0.6905},{""column"":""duration_minutes"",""missing_ratio"":0.3095},{""column"":""date_added_year"",""missing_ratio"":0.0126},{""column"":""release_year"",""missing_ratio"":0.0126},{""column"":""age_in_years"",""missing_ratio"":0.0126},{""column"":""date_added_month"",""missing_ratio"":0.0126},{""column"":""date_added"",""missing_ratio"":0.0126},{""column"":""title"",""missing_ratio"":0.0},{""column"":""type"",""missing_ratio"":0.0},{""column"":""show_id"",""missing_ratio"":0.0},{""column"":""listed_in"",""missing_ratio"":0.0},{""column"":""duration"",""missing_ratio"":0.0},{""column"":""rating"",""missing_ratio"":0.0},{""column"":""country"",""missing_ratio"":0.0},{""column"":""director"",""missing_ratio"":0.0},{""column"":""cast"",""missing_ratio"":0.0},{""column"":""description"",""missing_ratio"":0.0},{""column"":""duration_unit"",""missing_ratio"":0.0},{""column"":""duration_value"",""missing_ratio"":0.0},{""column"":""country_count"",""missing_ratio"":0.0},{""column"":""is_multi_country"",""missing_ratio"":0.0},{""column"":""actor_count"",""missing_ratio"":0.0},{""column"":""genre_international_movies"",""missing_ratio"":0.0},{""column"":""genre_dramas"",""missing_ratio"":0.0},{""column"":""genre_comedies"",""missing_ratio"":0.0},{""column"":""genre_international_tv_shows"",""missing_ratio"":0.0},{""column"":""genre_documentaries"",""missing_ratio"":0.0},{""column"":""genre_action_&_adventure"",""missing_ratio"":0.0},{""column"":""genre_tv_dramas"",""missing_ratio"":0.0},{""column"":""genre_independent_movies"",""missing_ratio"":0.0},{""column"":""genre_children_&_family_movies"",""missing_ratio"":0.0},{""column"":""genre_romantic_movies"",""missing_ratio"":0.0},{""column"":""genre_tv_comedies"",""missing_ratio"":0.0},{""column"":""genre_thrillers"",""missing_ratio"":0.0},{""column"":""genre_crime_tv_shows"",""missing_ratio"":0.0},{""column"":""genre_kids'_tv"",""missing_ratio"":0.0},{""column"":""genre_docuseries"",""missing_ratio"":0.0},{""column"":""genre_romantic_tv_shows"",""missing_ratio"":0.0},{""column"":""genre_stand-up_comedy"",""missing_ratio"":0.0},{""column"":""genre_music_&_musicals"",""missing_ratio"":0.0},{""column"":""genre_horror_movies"",""missing_ratio"":0.0},{""column"":""genre_british_tv_shows"",""missing_ratio"":0.0}]"

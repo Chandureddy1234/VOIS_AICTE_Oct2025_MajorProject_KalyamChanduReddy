@@ -1,0 +1,17 @@
+{
+  "dataset_path": "c:\\Users\\KALLY\\OneDrive\\Desktop\\AI\\vois netflix project\\Netflix Dataset.csv",
+  "rows_raw": 7789,
+  "cols_raw": 11,
+  "rows_clean": 7786,
+  "cols_clean": 42,
+  "packages": {
+    "pandas": "2.3.3",
+    "numpy": "2.3.3",
+    "matplotlib": "3.10.6",
+    "seaborn": "0.13.2",
+    "plotly": "6.3.1",
+    "pycountry": "24.6.1",
+    "networkx": "3.5"
+  },
+  "synthetic_demo": false
+}
