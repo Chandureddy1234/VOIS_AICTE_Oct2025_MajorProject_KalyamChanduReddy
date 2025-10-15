@@ -2,37 +2,11 @@
 
 
 
-This notebook-driven project analyzes the Netflix catalogue (7,789 titles, 11 columns) to surface content trends for strategic decision-making. It focuses on how Movies vs. TV Shows, genres, countries, ratings, talent, and durations have evolved so that stakeholders can optimize acquisition, production, and product experiences.This notebook-driven project analyzes the Netflix catalogue (7,789 titles, 11 columns) to surface content trends for strategic decision-making. It focuses on how Movies vs. TV Shows, genres, countries, ratings, talent, and durations have evolved so that stakeholders can optimize acquisition, production, and product experiences.
-
-
-
-## Repository contents## Repository contents
-
-
-
-| Artifact | Description || Artifact | Description |
-
-| --- | --- || --- | --- |
-
-| `netflix_content_trends_analysis.ipynb` | End-to-end notebook covering ingestion, cleaning, feature engineering, exploratory visuals, storytelling commentary, and executive recommendations. || `netflix_content_trends_analysis.ipynb` | End-to-end notebook covering ingestion, cleaning, feature engineering, exploratory visuals, storytelling commentary, and executive recommendations. |
-
-| `Netflix Dataset.csv` | Raw dataset used in the analysis. || `Netflix Dataset.csv` | Raw dataset used in the analysis. |
-
-| `outputs/` | Auto-generated exports after running the notebook (cleaned CSVs, aggregation tables, PNG charts, Plotly HTML files, `run_summary.json`). || `outputs/` | Auto-generated exports after running the notebook (cleaned CSVs, aggregation tables, PNG charts, Plotly HTML files, `run_summary.json`). |
-
-| `[Your Name]_Netflix Data Analysis Project PPT.pptx` | Slide deck template, ready to update with findings if required. |
-
+This notebook-driven project analyzes the Netflix catalogue (7,789 titles, 11 columns) to surface content trends for strategic decision-making. It focuses on how Movies vs. TV Shows, genres, countries, ratings, talent, and durations have evolved so that stakeholders can optimize acquisition, production, and product experiences.This notebook-driven project analyzes the Netflix catalogue (7,789 titles, 11 columns) to surface content trends for strategic decision-making. It focuses on how Movies vs. TV Shows, genres, countries, ratings, talent, and durations have evolved so that stakeholders can optimize acquisition, production, and product experiement.
 ## Environment
-
-## Environment
-
 - Python 3.12 (tested)
 
 - Key libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`, `pycountry`, `networkx`, `python-dateutil`- Python 3.12 (tested)
-
-- Optional: A virtual environment (recommended) created via `python -m venv .venv` and activated before installing dependencies.- Key libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`, `pycountry`, `networkx`, `python-dateutil`, `nbformat`, `python-docx`, `jupyter`
-
-- Optional: A virtual environment (recommended) created via `python -m venv .venv` and activated before installing dependencies.
 
 Install everything with:
 
@@ -70,17 +44,6 @@ python -m pip install pandas numpy matplotlib seaborn plotly pycountry networkx 
 
    - Visualization assets (`fig_*.png` and Plotly HTML files)
 
-To reproduce everything from the command line:   - `outputs/run_summary.json` capturing run metadata
-
-
-
-```bashTo reproduce everything from the command line:
-
-jupyter nbconvert --to notebook --execute netflix_content_trends_analysis.ipynb --inplace --ExecutePreprocessor.timeout=0
-
-``````bash
-
-jupyter nbconvert --to notebook --execute netflix_content_trends_analysis.ipynb --inplace --ExecutePreprocessor.timeout=0
 
 ## Key insights```
 
