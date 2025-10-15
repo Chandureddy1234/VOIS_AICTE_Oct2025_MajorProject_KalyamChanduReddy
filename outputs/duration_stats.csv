@@ -1,0 +1,5 @@
+metric,count,unique,top,freq,mean,std,min,25%,50%,75%,max
+duration_value,7786.0,,,,69.11803236578474,50.95230120268541,1.0,2.0,88.0,106.0,312.0
+duration_unit,7786,3,Min,5376,,,,,,,
+duration_minutes,5376.0,201.0,90.0,136.0,,,,,,,
+season_count,2410.0,15.0,1.0,1608.0,,,,,,,
