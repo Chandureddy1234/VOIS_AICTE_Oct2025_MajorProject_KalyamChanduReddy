@@ -1,4 +1,4 @@
-# Netflix Content Trends Analysis# Netflix Content Trends Analysis
+# Netflix Content Trends Analysis
 
 
 
